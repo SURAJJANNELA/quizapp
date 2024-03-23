@@ -1,0 +1,24 @@
+GET http://localhost:5000/product-api/products
+###
+GET http://localhost:5000/product-api/products/shirts
+###
+GET http://localhost:5000/product-api/products/3
+###
+PUT http://localhost:5000/product-api/product_user
+Content-Type: application/json
+
+{
+    "prod_id":3,
+    "prod_name":"shirts"
+}
+
+###
+POST http://localhost:5000/product-api/create_product
+Content-Type: application/json
+
+{
+    "prod_id":4,
+    "prod_name":"fossil"
+}
+###
+DELETE http://localhost:5000/product-api/delete_prod/shirts

@@ -1,0 +1,31 @@
+GET http://localhost:5000/user-api/users
+###
+GET http://localhost:5000/user-api/user/suraj
+###
+POST http://localhost:5000/user-api/new_user
+Content-Type: application/json
+
+{
+    "user_id":5,
+    "user_name":"ankit"
+}
+###
+POST http://localhost:5000/user-api/login
+Content-Type: application/json
+
+{
+    "username":"suraj",
+    "password":"123456",
+    //"email_id":"jsvsuraj2@gamil.com"
+}
+
+###
+PUT http://localhost:5000/user-api/users
+Content-Type: application/json
+
+{
+    "user_id":10,
+    "user_name":"bhuvan"
+}
+###
+DELETE  http://localhost:5000/user-api/users/suraj
